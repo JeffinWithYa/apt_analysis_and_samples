@@ -86,6 +86,7 @@ It is recommended to run this script inside a virtual environment to manage depe
 
 ## Accessing the Graph
 
+![Progress Tracker](https://raw.githubusercontent.com/JeffinWithYa/apt_analysis_and_samples/main/tmp_progress_tracking/progress_tracker_with_dates_day1.png)
 
 ---
 
