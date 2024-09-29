@@ -84,7 +84,7 @@ It is recommended to run this script inside a virtual environment to manage depe
    ```
    This generates `progress_tracker_with_dates_day2.png`.
 
-## Recent Graph
+## Recent Graph - Sept. 29th, 2024
 
 ![Progress Tracker](https://raw.githubusercontent.com/JeffinWithYa/apt_analysis_and_samples/main/tmp_progress_tracking/progress_tracker_with_dates_day1.png)
 
