@@ -65,8 +65,14 @@ def plot_progress(day):
     plt.figure(figsize=(ASPECT_RATIO_10_INCH_WIDE, ASPECT_RATIO_6_INCH_TALL))
     plt.plot(date_range, target, label=TARGET, linestyle=DASHED_LINE_STYLE)
 
+    plt.axhline(y=13, color="gray", linestyle=DASHED_LINE_STYLE, label="Completion")
+ 
     for person, progress in progress_data.items():
         plt.plot(days_passed, progress, label=person)
+
+    # Add annotations for "Michael done" and "Amber done"
+    plt.text(days_passed[-1], 13, "Michael DONE!!", fontsize=9, color="green")
+    plt.text(days_passed[-1], 12, "Amber DONE!!", fontsize=9, color="orange")
 
     # Formatting the date axis
     plt.gca().xaxis.set_major_formatter(
@@ -92,40 +98,40 @@ update_progress(0, 0, 0, day=0)  # Day 1 update
 plot_progress(day=0)
 
 # Sept 30th
-# update_progress(4, 3, 1, day=1)  # Day 2 update
-# plot_progress(day=1)
+update_progress(0, 0, 0, day=1)  # Day 2 update
+plot_progress(day=1)
 
 # Oct 1st
-# update_progress(8, 6, 2, day=2)  # Day 3 update
-# plot_progress(day=2)
+update_progress(0, 0, 0, day=2)  # Day 3 update
+plot_progress(day=2)
 
 # Oct 2nd
-# update_progress(12, 9, 4, day=3)  # Day 4 update
-# plot_progress(day=3)
+update_progress(0, 0, 0, day=3)  # Day 4 update
+plot_progress(day=3)
 
 # Oct 3rd
-# update_progress(14, 12, 6, day=4)  # Day 5 update
-# plot_progress(day=4)
+update_progress(0, 0, 0, day=4)  # Day 5 update
+plot_progress(day=4)
 
 # Oct 4th
-# update_progress(14, 14, 8, day=5)  # Day 6 update
-# plot_progress(day=5)
+update_progress(0, 0, 0, day=5)  # Day 6 update
+plot_progress(day=5)
 
 # Oct 5th
-# update_progress(14, 14, 10, day=6)  # Day 7 update
-# plot_progress(day=6)
+update_progress(0, 0, 0, day=6)  # Day 7 update
+plot_progress(day=6)
 
 # Oct 6th
-# update_progress(14, 14, 12, day=7)  # Day 8 update
-# plot_progress(day=7)
+update_progress(0, 0, 1, day=7)  # Day 8 update
+plot_progress(day=7)
 
 # Oct 7th
-# update_progress(14, 14, 14, day=8)  # Day 9 update
-# plot_progress(day=8)
+update_progress(0, 13, 4, day=8)  # Day 9 update
+plot_progress(day=8)
 
 # Oct 8th
-# update_progress(14, 14, 14, day=9)  # Day 10 update
-# plot_progress(day=9)
+update_progress(13, 13, 6, day=9)  # Day 10 update
+plot_progress(day=9)
 
 # Oct 9th
 # update_progress(14, 14, 14, day=10)  # Day 11 update
