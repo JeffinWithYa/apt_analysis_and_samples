@@ -10,7 +10,7 @@ TARGET_PROGRESS_START_0 = 0
 TARGET_PROGRESS_END_14 = 14
 X_AXIS_LABEL = "Date"
 Y_AXIS_LABEL = "Reports Completed"
-GRAPH_TITLE = "MCTI 6530 Submission 1 Progress Tracker"
+GRAPH_TITLE = "MCTI 6530 Submission 2 Progress Tracker"
 PROGRESS_TRACKER_FILE_BASE = "progress_tracker_with_dates_day"
 FILE_EXTENSION_PNG = ".png"
 
@@ -26,11 +26,13 @@ MONTH_SEPT = 9
 DATE_SEPT_29 = 29
 DATE_OCT_10 = 10
 MONTH_OCT = 10
+DATE_OCT_14 = 14
+DATE_OCT_28 = 28
 
 
 # Create date range from September 29th to October 10th
-start_date = datetime(YEAR_2024, MONTH_SEPT, DATE_SEPT_29)
-end_date = datetime(YEAR_2024, MONTH_OCT, DATE_OCT_10)
+start_date = datetime(YEAR_2024, MONTH_OCT, DATE_OCT_14)
+end_date = datetime(YEAR_2024, MONTH_OCT, DATE_OCT_28)
 date_range = pd.date_range(start=start_date, end=end_date)
 
 # Target progress for each day
@@ -71,8 +73,8 @@ def plot_progress(day):
         plt.plot(days_passed, progress, label=person)
 
     # Add annotations for "Michael done" and "Amber done"
-    plt.text(days_passed[-1], 13, "Michael DONE!!", fontsize=9, color="green")
-    plt.text(days_passed[-1], 12, "Amber DONE!!", fontsize=9, color="orange")
+    #plt.text(days_passed[-1], 13, "Michael DONE!!", fontsize=9, color="green")
+    #plt.text(days_passed[-1], 12, "Amber DONE!!", fontsize=9, color="orange")
 
     # Formatting the date axis
     plt.gca().xaxis.set_major_formatter(
@@ -93,50 +95,63 @@ def plot_progress(day):
     plt.close()
 
 
-# Sept 29th
+# Oct 14th
 update_progress(0, 0, 0, day=0)  # Day 1 update
 plot_progress(day=0)
 
-# Sept 30th
-update_progress(0, 0, 0, day=1)  # Day 2 update
-plot_progress(day=1)
+# Oct 15th
+#update_progress(0, 0, 0, day=1)  # Day 2 update
+#plot_progress(day=1)
 
-# Oct 1st
-update_progress(0, 0, 0, day=2)  # Day 3 update
-plot_progress(day=2)
+# Oct 16th
+#update_progress(0, 0, 0, day=2)  # Day 3 update
+#plot_progress(day=2)
 
-# Oct 2nd
-update_progress(0, 0, 0, day=3)  # Day 4 update
-plot_progress(day=3)
+# Oct 17th
+#update_progress(0, 0, 0, day=3)  # Day 4 update
+#plot_progress(day=3)
 
-# Oct 3rd
-update_progress(0, 0, 0, day=4)  # Day 5 update
-plot_progress(day=4)
+# Oct 18th
+#update_progress(0, 0, 0, day=4)  # Day 5 update
+#plot_progress(day=4)
 
-# Oct 4th
-update_progress(0, 0, 0, day=5)  # Day 6 update
-plot_progress(day=5)
+# Oct 19th
+#update_progress(0, 0, 0, day=5)  # Day 6 update
+#plot_progress(day=5)
 
-# Oct 5th
-update_progress(0, 0, 0, day=6)  # Day 7 update
-plot_progress(day=6)
+# Oct 20th
+#update_progress(0, 0, 0, day=6)  # Day 7 update
+#plot_progress(day=6)
 
-# Oct 6th
-update_progress(0, 0, 1, day=7)  # Day 8 update
-plot_progress(day=7)
+# Oct 21st
+#update_progress(0, 0, 1, day=7)  # Day 8 update
+#plot_progress(day=7)
 
-# Oct 7th
-update_progress(0, 13, 4, day=8)  # Day 9 update
-plot_progress(day=8)
+# Oct 22nd
+#update_progress(0, 13, 4, day=8)  # Day 9 update
+#plot_progress(day=8)
 
-# Oct 8th
-update_progress(13, 13, 6, day=9)  # Day 10 update
-plot_progress(day=9)
+# Oct 23rd
+#update_progress(13, 13, 6, day=9)  # Day 10 update
+#plot_progress(day=9)
 
-# Oct 9th
+# Oct 24th
 # update_progress(14, 14, 14, day=10)  # Day 11 update
 # plot_progress(day=10)
 
-# Oct 10th
+# Oct 25th
 # update_progress(14, 14, 14, day=11)  # Day 12 update
 # plot_progress(day=11)
+
+# Oct 26th
+# update_progress(14, 14, 14, day=12)  # Day 13 update
+# plot_progress(day=12)
+
+# Oct 27th
+# update_progress(14, 14, 14, day=13)  # Day 14 update
+# plot_progress(day=13)
+
+# Oct 28th
+# update_progress(14, 14, 14, day=14)  # Day 15 update
+# plot_progress(day=14)
+
