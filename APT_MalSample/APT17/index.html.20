@@ -1,0 +1,160 @@
+{
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "de19e0163af15585c305f845b90262aee3c2bdf037f9fc733d3f1b379d00edd0",
+            "sha3_384_hash": "29cd59599ac71fb3cb5a33f1e55690cccf799bccc6f5daa6c2abe1032c78ef9418a4312ecb189ead0e4583bc111e32e3",
+            "sha1_hash": "f0db6e0967c534fa0326c9db009d0f22e0112a6b",
+            "md5_hash": "19aff0a43f80919a6113020d3ff38300",
+            "first_seen": "2024-07-15 05:35:17",
+            "last_seen": "2024-07-31 10:25:17",
+            "file_name": "a.exe",
+            "file_size": 35328,
+            "file_type_mime": "application\/x-dosexec",
+            "file_type": "exe",
+            "reporter": "JAMESWT_MHT",
+            "origin_country": "IT",
+            "anonymous": 0,
+            "signature": null,
+            "imphash": "",
+            "tlsh": "T1B5F2E175AEA61746CAECDF38DDB97F31503CE1D63A280A3C8CC879D76CA1B47A160584",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "768:TLlw6CpA\/0H9QoiMLD7aBzE\/BMR35hUJtwjxI1VFA:TZMgu9QFM7x\/BOpCExI7FA",
+            "magika": null,
+            "dhash_icon": null,
+            "trid": [
+                "52.9% (.EXE) Win32 Executable (generic) (4504\/4\/1)",
+                "23.5% (.EXE) Generic Win\/DOS Executable (2002\/3)",
+                "23.5% (.EXE) DOS Executable Generic (2000\/1)"
+            ],
+            "comment": null,
+            "archive_pw": null,
+            "tags": [
+                "32x-2024-07-15",
+                "9002RAT",
+                "APT17",
+                "exe",
+                "meeting-equitaligaiustizia-it"
+            ],
+            "code_sign": null,
+            "delivery_method": null,
+            "intelligence": {
+                "clamav": null,
+                "downloads": "311",
+                "uploads": "3",
+                "mail": null
+            },
+            "file_information": null,
+            "ole_information": [],
+            "yara_rules": null,
+            "vendor_intel": {
+                "ANY.RUN": [
+                    {
+                        "malware_family": null,
+                        "verdict": "Malicious activity",
+                        "file_name": "a.exe",
+                        "date": "2024-07-05 11:46:55",
+                        "analysis_url": "https:\/\/app.any.run\/tasks\/0bbde290-b948-4e29-960b-f13b7d1b5cec",
+                        "tags": []
+                    }
+                ],
+                "CERT-PL_MWDB": {
+                    "detection": null,
+                    "link": "https:\/\/mwdb.cert.pl\/sample\/de19e0163af15585c305f845b90262aee3c2bdf037f9fc733d3f1b379d00edd0\/"
+                },
+                "YOROI_YOMI": {
+                    "detection": "Suspicious File",
+                    "score": "0.40"
+                },
+                "vxCube": {
+                    "verdict": "clean1",
+                    "maliciousness": "0",
+                    "behaviour": [
+                        {
+                            "threat_level": "neutral",
+                            "rule": "\u0421reating synchronization primitives"
+                        },
+                        {
+                            "threat_level": "neutral",
+                            "rule": "DNS request"
+                        }
+                    ]
+                },
+                "Intezer": {
+                    "verdict": "malicious",
+                    "family_name": "Generic Malware",
+                    "analysis_url": "https:\/\/analyze.intezer.com\/analyses\/245dafe6-989d-4912-b10a-3033fc532e92?utm_source=MalwareBazaar"
+                },
+                "InQuest": {
+                    "verdict": "MALICIOUS",
+                    "url": null,
+                    "details": [
+                        {
+                            "category": "info",
+                            "title": "Windows PE Executable",
+                            "description": "Found a Windows Portable Executable (PE) binary. Depending on context, the presence of a binary is suspicious or malicious."
+                        }
+                    ]
+                },
+                "Triage": {
+                    "malware_family": null,
+                    "score": "3",
+                    "link": "https:\/\/tria.ge\/reports\/240715-gakvcazgqn\/",
+                    "tags": [],
+                    "signatures": [
+                        {
+                            "signature": "Suspicious behavior: EnumeratesProcesses",
+                            "score": null
+                        }
+                    ],
+                    "malware_config": []
+                },
+                "ReversingLabs": {
+                    "threat_name": "Win32.Trojan.Leonem",
+                    "status": "MALICIOUS",
+                    "first_seen": "2024-07-05 18:56:43",
+                    "scanner_count": "38",
+                    "scanner_match": "28",
+                    "scanner_percent": "73.68"
+                },
+                "Spamhaus_HBL": [
+                    {
+                        "detection": "suspicious",
+                        "link": "https:\/\/www.spamhaus.org\/hbl\/"
+                    }
+                ],
+                "UnpacMe": [
+                    {
+                        "sha256_hash": "1c319bd66bdbaa8d7c9f453b3521578ac4a89f066a2ef93ec25dc0395d3a5d4d",
+                        "md5_hash": "73c7cc0f92e5435b4921714b14a08c36",
+                        "sha1_hash": "5693a9c446b042c3731d7d21b3c0bd478bee2626",
+                        "detections": [
+                            "Pirpi_1609_A"
+                        ],
+                        "link": "https:\/\/www.unpac.me\/results\/23a4e7a3-076f-4f77-a986-e9d5ee6e600c\/"
+                    },
+                    {
+                        "sha256_hash": "de19e0163af15585c305f845b90262aee3c2bdf037f9fc733d3f1b379d00edd0",
+                        "md5_hash": "19aff0a43f80919a6113020d3ff38300",
+                        "sha1_hash": "f0db6e0967c534fa0326c9db009d0f22e0112a6b",
+                        "detections": [],
+                        "link": "https:\/\/www.unpac.me\/results\/23a4e7a3-076f-4f77-a986-e9d5ee6e600c\/"
+                    }
+                ],
+                "VMRay": {
+                    "verdict": "malicious",
+                    "malware_family": "Pirpi",
+                    "report_link": "https:\/\/www.vmray.com\/analyses\/_mb\/de19e0163af1\/report\/overview.html"
+                },
+                "FileScan-IO": {
+                    "verdict": "MALICIOUS",
+                    "threatlevel": "1",
+                    "confidence": "1",
+                    "report_link": "https:\/\/www.filescan.io\/uploads\/6694b54515842045dc3caba1\/reports\/ad4ff517-454d-41f9-904f-7c37fb725c67\/overview"
+                }
+            },
+            "comments": null
+        }
+    ]
+}

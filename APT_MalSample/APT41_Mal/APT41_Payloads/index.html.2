@@ -1,0 +1,158 @@
+{
+    "query_status": "ok",
+    "data": [
+        {
+            "sha256_hash": "ab56501167fe689fe55f6e6ddc3bb91952299bd5c3ef004b02bf1c3b4061c7cf",
+            "sha3_384_hash": "bfdc3f94adb9365262fee6092918b3a20c13912188561c21b1dbc25c7fd0b556d6700f61e9bb2567f3e474b3def41297",
+            "sha1_hash": "66fb63e6e49c2c201a0b6204e1d0269812a4b662",
+            "md5_hash": "bc85062de0f70afd44bb072b0b71a8cc",
+            "first_seen": "2024-07-12 06:35:55",
+            "last_seen": "2024-07-12 07:24:34",
+            "file_name": "ab56501167fe689fe55f6e6ddc3bb91952299bd5c3ef004b02bf1c3b4061c7cf",
+            "file_size": 126464,
+            "file_type_mime": "application\/x-dosexec",
+            "file_type": "exe",
+            "reporter": "JAMESWT_MHT",
+            "origin_country": "IT",
+            "anonymous": 0,
+            "signature": null,
+            "imphash": "0cd7b92b97ccc7e255df1f46b5299986",
+            "tlsh": "T1B1C37D1B73A500BBE4778239D9531A06D776B81047619BEF03A046AA2F237D4BE3DF61",
+            "telfhash": null,
+            "gimphash": null,
+            "ssdeep": "3072:MaWH1sVXJZWcTYdGaz5qe\/PyUAL93TP7MauW0dK6gO:hZWcTYdGgqe\/PWMauZdK6gO",
+            "magika": null,
+            "dhash_icon": null,
+            "trid": [
+                "48.7% (.EXE) Win64 Executable (generic) (10523\/12\/4)",
+                "23.3% (.EXE) Win16 NE executable (generic) (5038\/12\/1)",
+                "9.3% (.EXE) OS\/2 Executable (generic) (2029\/13)",
+                "9.2% (.EXE) Generic Win\/DOS Executable (2002\/3)",
+                "9.2% (.EXE) DOS Executable Generic (2000\/1)"
+            ],
+            "comment": null,
+            "archive_pw": null,
+            "tags": [
+                "APT41",
+                "DodgeBox",
+                "exe"
+            ],
+            "code_sign": null,
+            "delivery_method": null,
+            "intelligence": {
+                "clamav": [
+                    "SecuriteInfo.com.Win64.MalwareX-gen.22912.28444.UNOFFICIAL"
+                ],
+                "downloads": "360",
+                "uploads": "2",
+                "mail": null
+            },
+            "file_information": null,
+            "ole_information": [],
+            "yara_rules": [
+                {
+                    "rule_name": "cobalt_strike_tmp01925d3f",
+                    "author": "The DFIR Report",
+                    "description": "files - file ~tmp01925d3f.exe",
+                    "reference": "https:\/\/thedfirreport.com"
+                },
+                {
+                    "rule_name": "DebuggerCheck__API",
+                    "author": null,
+                    "description": null,
+                    "reference": "https:\/\/github.com\/naxonez\/yaraRules\/blob\/master\/AntiDebugging.yara"
+                },
+                {
+                    "rule_name": "DebuggerCheck__QueryInfo",
+                    "author": null,
+                    "description": null,
+                    "reference": "https:\/\/github.com\/naxonez\/yaraRules\/blob\/master\/AntiDebugging.yara"
+                }
+            ],
+            "vendor_intel": {
+                "ANY.RUN": [
+                    {
+                        "malware_family": null,
+                        "verdict": "No threats detected",
+                        "file_name": "ab56501167fe689fe55f6e6ddc3bb91952299bd5c3ef004b02bf1c3b4061c7cf.exe",
+                        "date": "2024-07-12 06:55:02",
+                        "analysis_url": "https:\/\/app.any.run\/tasks\/36e79ebe-d528-4f79-bbcf-041719df21db",
+                        "tags": []
+                    }
+                ],
+                "CERT-PL_MWDB": {
+                    "detection": null,
+                    "link": "https:\/\/mwdb.cert.pl\/sample\/ab56501167fe689fe55f6e6ddc3bb91952299bd5c3ef004b02bf1c3b4061c7cf\/"
+                },
+                "YOROI_YOMI": {
+                    "detection": "Malicious File",
+                    "score": "1.00"
+                },
+                "vxCube": {
+                    "verdict": "clean1",
+                    "maliciousness": "0",
+                    "behaviour": [
+                        {
+                            "threat_level": "neutral",
+                            "rule": "\u0421reating synchronization primitives"
+                        }
+                    ]
+                },
+                "Intezer": {
+                    "verdict": "unknown",
+                    "family_name": null,
+                    "analysis_url": "https:\/\/analyze.intezer.com\/analyses\/93e9e6be-ddbf-4b7f-9d47-3785491dd3b2?utm_source=MalwareBazaar"
+                },
+                "InQuest": {
+                    "verdict": "MALICIOUS",
+                    "url": null,
+                    "details": [
+                        {
+                            "category": "info",
+                            "title": "Windows PE Executable",
+                            "description": "Found a Windows Portable Executable (PE) binary. Depending on context, the presence of a binary is suspicious or malicious."
+                        }
+                    ]
+                },
+                "Triage": {
+                    "malware_family": null,
+                    "score": "3",
+                    "link": "https:\/\/tria.ge\/reports\/240712-hcw6tsvbrc\/",
+                    "tags": [],
+                    "signatures": [],
+                    "malware_config": []
+                },
+                "ReversingLabs": {
+                    "threat_name": "Win64.Trojan.Generic",
+                    "status": "SUSPICIOUS",
+                    "first_seen": "2024-07-03 10:01:08",
+                    "scanner_count": "24",
+                    "scanner_match": "18",
+                    "scanner_percent": "75.00"
+                },
+                "Spamhaus_HBL": [
+                    {
+                        "detection": "suspicious",
+                        "link": "https:\/\/www.spamhaus.org\/hbl\/"
+                    }
+                ],
+                "UnpacMe": [
+                    {
+                        "sha256_hash": "ab56501167fe689fe55f6e6ddc3bb91952299bd5c3ef004b02bf1c3b4061c7cf",
+                        "md5_hash": "bc85062de0f70afd44bb072b0b71a8cc",
+                        "sha1_hash": "66fb63e6e49c2c201a0b6204e1d0269812a4b662",
+                        "detections": [],
+                        "link": "https:\/\/www.unpac.me\/results\/1edef95a-0e7c-4a78-8fda-2707a62489b7\/"
+                    }
+                ],
+                "FileScan-IO": {
+                    "verdict": "LIKELY_MALICIOUS",
+                    "threatlevel": "0.75",
+                    "confidence": "1",
+                    "report_link": "https:\/\/www.filescan.io\/uploads\/6690ced4fa6ffdddde482d88\/reports\/3140ec88-ed4b-4b88-9872-9398a04137ae\/overview"
+                }
+            },
+            "comments": null
+        }
+    ]
+}
