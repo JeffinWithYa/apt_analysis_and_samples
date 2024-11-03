@@ -1,0 +1,52 @@
+Ghidra Opcode Extraction script - author Jeff
+
+from ghidra.program.model.listing import CodeUnit
+from ghidra.util import Msg
+
+def extract_opcodes():
+    # Ensure a program is loaded
+    if currentProgram is None:
+        print("No program is currently loaded in Ghidra.")
+        return None
+
+    # Get the listing of the current program
+    listing = currentProgram.getListing()
+   
+    # Iterate through all functions in the program
+    func_iter = listing.getFunctions(True)
+   
+    opcode_list = []
+
+    while func_iter.hasNext():
+        function = func_iter.next()
+        # Iterate through instructions in each function
+        inst_iter = listing.getInstructions(function.getBody(), True)
+       
+        while inst_iter.hasNext():
+            instruction = inst_iter.next()
+            mnemonic = instruction.getMnemonicString()
+            opcode_list.append(mnemonic)
+   
+    return opcode_list
+
+def write_opcodes_to_file(opcodes, file_path):
+    if not opcodes:
+        print("No opcodes extracted.")
+        return
+
+    try:
+        with open(file_path, "w") as file:
+            for opcode in opcodes:
+                file.write(opcode + "\n")
+        print("Opcodes successfully written to " + file_path)
+    except Exception as e:
+        print("Error writing to file: " + str(e))
+
+# Set the output file path (adjust this to your desired location)
+output_file = "opcodes.txt"  # Replace with your path
+
+# Extract opcodes from the current program
+opcodes = extract_opcodes()
+
+# Write the opcodes to a file
+write_opcodes_to_file(opcodes, output_file)
